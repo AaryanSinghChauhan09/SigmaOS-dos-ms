@@ -1,0 +1,47 @@
+# SigmaOS-dos-ms Component Wiki
+
+## Overview
+SigmaOS-dos-ms provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+
+## Principles
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-dos-ms Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-dos-ms Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-dos-ms Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-dos-ms APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-dos-ms extensions**: Use composition patterns for extensions
+
+## Architecture
+SigmaOS-dos-ms follows a SigmaOS-dos-ms pattern:
+- **SigmaOS-dos-ms Core**: Provides SigmaOS-dos-ms support, SigmaOS-dos-ms management, and SigmaOS-dos-ms tracking
+- **Management**: Supports SigmaOS-dos-ms management, SigmaOS-dos-ms configuration, and SigmaOS-dos-ms lifecycle
+- **Tracking**: Supports SigmaOS-dos-ms status, SigmaOS-dos-ms tracking, and SigmaOS-dos-ms lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-dos-ms configurations or unsupported SigmaOS-dos-ms types
+
+## API
+The component provides the following public APIs:
+- Manage a SigmaOS-dos-ms by given configuration
+- Register a SigmaOS-dos-ms by given name
+- Get SigmaOS-dos-ms status and SigmaOS-dos-ms availability
+- Track SigmaOS-dos-ms management and SigmaOS-dos-ms tracking
+- Error types for SigmaOS-dos-ms failure scenarios or unsupported SigmaOS-dos-ms types
+
+## Test Structure (Arrange-Act-ASSERT)
+All tests follow the AAA pattern:
+1. **Arrange**: Set up test environment with specific SigmaOS-dos-ms configuration
+2. **Act**: Execute the code under test (SigmaOS-dos-ms init, SigmaOS-dos-ms management)
+3. **Assert**: Verify the expected SigmaOS-dos-ms results
+
+## Development
+- Follows best practices with clear abstraction boundaries
+- SigmaOS-dos-ms initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-dos-ms failure scenarios
+- Unit tests provided for SigmaOS-dos-ms management and configuration
+- Integration tests for full SigmaOS-dos-ms system with actual SigmaOS-dos-ms integration
+
+## TODO
+- Add support for additional SigmaOS-dos-ms types
+- Expand SigmaOS-dos-ms capabilities (SigmaOS-dos-ms features, SigmaOS-dos-ms configurations, SigmaOS-dos-ms tracking)
+- Add lifecycle features (SigmaOS-dos-ms tracking, SigmaOS-dos-ms lifecycle, SigmaOS-dos-ms propagation)
+- Create integration tests with actual SigmaOS-dos-ms systems and SigmaOS-dos-ms integration
+- Implement SigmaOS-dos-ms persistence and SigmaOS-dos-ms state management

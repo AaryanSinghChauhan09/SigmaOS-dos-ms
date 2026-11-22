@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-dos-ms Component Wiki
+# SigmaOS-dos-ms Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-dos-ms provides MS-DOS execution and interrupt vector bridge for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-dos-ms provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-dos-ms Abstraction
-- Fail-Fast on SigmaOS-dos-ms Initialization Errors
-- Deterministic SigmaOS-dos-ms Setup
-- Clear Abstraction Over SigmaOS-dos-ms APIs
-- Composition over Inheritance for SigmaOS-dos-ms extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-dos-ms Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-dos-ms Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-dos-ms Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-dos-ms APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-dos-ms extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-dos-ms follows a SigmaOS-dos-ms pattern:
+SigmaOS-dos-ms follows a SigmaOS-dos-ms pattern:
 - **SigmaOS-dos-ms Core**: Provides SigmaOS-dos-ms support, SigmaOS-dos-ms management, and SigmaOS-dos-ms tracking
 - **Management**: Supports SigmaOS-dos-ms management, SigmaOS-dos-ms configuration, and SigmaOS-dos-ms lifecycle
 - **Tracking**: Supports SigmaOS-dos-ms status, SigmaOS-dos-ms tracking, and SigmaOS-dos-ms lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-dos-ms follows a SigmaOS-dos-ms pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-dos-ms by given configuration
--  - Register a SigmaOS-dos-ms by given name
--  - Get SigmaOS-dos-ms status and SigmaOS-dos-ms availability
--  - Track SigmaOS-dos-ms management and SigmaOS-dos-ms tracking
+- Manage a SigmaOS-dos-ms by given configuration
+- Register a SigmaOS-dos-ms by given name
+- Get SigmaOS-dos-ms status and SigmaOS-dos-ms availability
+- Track SigmaOS-dos-ms management and SigmaOS-dos-ms tracking
 - Error types for SigmaOS-dos-ms failure scenarios or unsupported SigmaOS-dos-ms types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-dos-ms init, SigmaOS-dos-ms management)
 3. **Assert**: Verify the expected SigmaOS-dos-ms results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-dos-ms initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-dos-ms failure scenarios
 - Unit tests provided for SigmaOS-dos-ms management and configuration
